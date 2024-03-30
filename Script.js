@@ -141,7 +141,7 @@ console.log(sumArr);
 /*
 function Palindrome(str) {
     
-    const filteredStr = str.toLowerCase().replace(/\s/g, " ");
+    const filteredStr = str.toLowerCase().replace(" ");
     return filteredStr === filteredStr.split('').reverse().join('');
   }
   
@@ -296,3 +296,90 @@ const rotatedArray = (function rotateArray(arr, k) {
   })([2,5,6,8,3],2);
 console.log(rotatedArray);
 */
+
+//--------------------------------------------------------------------------------------------------------
+//2) Do the below programs in arrow functions.
+//a) Print odd numbers in an array
+/*
+const odd = (arr) => {
+  for(let i = 0 ; i < arr.length ; i++){
+      if(arr[i] % 2 != 0){
+          console.log(arr[i]);
+      }
+  }
+}
+arr = [1,2,3,4,5,6,7,8,9,10];
+odd(arr);
+*/
+//b) Convert all the strings to title caps in a string array
+/*
+const caps = (str) => {
+  str = str.toLowerCase().split(' ');
+  for (var i = 0; i < str.length; i++) {
+    str[i] = str[i].charAt(0).toUpperCase() + str[i].slice(1); 
+  } 
+  return str.join(' ');
+}
+
+var str = "hello world";
+console.log(caps(str));
+*/
+
+//c) Sum of all numbers in an array
+/*
+const sumArr = (arr) => {
+  var sum = 0;
+  for (var i = 0; i < arr.length; i++) {
+  sum = sum+arr[i]; 
+  } 
+  return sum;
+}
+var arr = [1,2,3,4,5];
+console.log(sumArr(arr));
+*/
+
+//d) Return all the prime numbers in an array
+/*
+function isPrime(n) {
+  for (let i = 2; i < n; i++) {
+    if (n % i === 0) {
+      return false;
+    }
+  }
+  return true;
+}
+const primeNumbers = (arr) => {
+  const primeNumbers = [];
+  for (const num of arr) {
+    if (isPrime(num)) {
+      primeNumbers.push(num);
+    }
+  }
+  return primeNumbers;
+}
+
+const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10,11,12,13,14,15];
+console.log(primeNumbers(arr));
+*/
+
+//e) Return all the palindromes in an array
+/*
+function Palindrome(str) {
+    const filteredStr = str.toLowerCase().replace(/\s/g, '');
+ return filteredStr === filteredStr.split('').reverse().join('');
+}
+
+const palindromesResult = (arr) => {
+   const palindromes = [];
+   for (const str of arr) {
+    if (Palindrome(str)) {
+      palindromes.push(str);
+    }
+  }
+return palindromes;
+}
+const arr = ["cook","kook","hello","peep","book","radar"];
+
+console.log(palindromesResult(arr));
+*/
+
