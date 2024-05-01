@@ -81,19 +81,27 @@ console.log(sumArr);
 //d) Return all the prime numbers in an array
 //Anonymous Function:
 
-/*const primeNumbers = function (arr) {
-    const primeNumbers = [];
-    for (const num of arr) {
-      if (isPrime(num)) {
-        primeNumbers.push(num);
-      }
-    }
-    return primeNumbers;
-  }
-  
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
-  console.log(primeNumbers(arr));
-*/
+// function isPrime(n) {
+//   for (let i = 2; i < n; i++) {
+//     if (n % i === 0) {
+//       return false;
+//     }
+//   }
+//   return true;
+// }
+// //Anonymous Function
+// const primeNumbers = function (arr) {
+//   const primeNumbers = [];
+//   for (const num of arr) {
+//     if (isPrime(num)) {
+//       primeNumbers.push(num);
+//     }
+//   }
+//   return primeNumbers;
+// }
+
+// const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// console.log(primeNumbers(arr));
   
 //IIFE Function:
   
@@ -120,21 +128,22 @@ console.log(sumArr);
   
 //e) Return all the palindromes in an array
 //Anonymous Function:
-  
-/*const palindromesResult = function (arr) {
-    
-    const palindromes = [];
-    for (const str of arr) {
-      if (palindromes) {
-        palindromes.push(str);
-      }
-    }
-   return palindromes;
-  }
-   const arr = ["cook","kook","hello","peep","book"];
-  
-  console.log(palindromes);
-*/
+
+// function Palindrome(str) {
+//   const filteredStr = str.toLowerCase().replace(/\s/g, "");
+//   return filteredStr === filteredStr.split("").reverse().join("");
+// }
+// const palindromesResult = function (arr) {
+//   const palindromes = [];
+//   for (const str of arr) {
+//     if (Palindrome(str)) {
+//       palindromes.push(str);
+//     }
+//   }
+//   return palindromes;
+// };
+// const arr = ["engine", "mom", "racecar", "madam", "civic", "level", "hello"];
+// console.log(palindromesResult(arr));
   
 //IIFE Fucntion:
 
